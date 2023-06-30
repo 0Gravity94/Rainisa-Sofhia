@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background: linear-gradient(
+    106.7deg,
+    rgb(245, 167, 191) -6.2%,
+    rgb(201, 218, 238) 46.4%,
+    rgb(164, 240, 229) 86.4%
+  ); */
+  background-color: #faf5ef;
+  font-family: "Roboto Slab", serif;
+}
+
+#snaps {
+  scroll-snap-type: y mandatory;
+}
+
+#snaps > #welcome,
+#about,
+#skillsTech,
+#works {
+  scroll-snap-align: center;
+}
