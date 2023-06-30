@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#FAF5EF",
+        secondary: "#F3E3E2",
       },
     },
     daisyui: {

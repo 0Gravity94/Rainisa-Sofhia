@@ -7,14 +7,10 @@ function Works({ img, title, git, description, live, tech, onNavigate }) {
   return (
     <div
       id="card"
-      className="flex flex-wrap justify-center w-full p-2 overflow-hidden border-2 rounded-md border-slate-800 gap-y-2"
+      className="grid w-full gap-5 p-2 overflow-hidden align-middle border-2 rounded-md place-content-center border-slate-800 hover:scale-110"
     >
-      <img
-        className="grayscale hover:grayscale-0 hover:scale-105"
-        src={img}
-        alt={title}
-      />
-      <h3 className="text-lg font-bold text-slate-800">{title}</h3>
+      <img className="" src={img} alt={title} />
+      <h3 className="text-lg font-bold text-center text-slate-800">{title}</h3>
       {/* <h3 className="text-lg font-bold text-slate-800">
         Description: <br />{" "}
         <span className="text-base font-normal text-slate-800">
@@ -27,7 +23,7 @@ function Works({ img, title, git, description, live, tech, onNavigate }) {
           {tech}
         </span>
       </h3> */}
-      <div className="flex gap-5 mt-3 text-lg md:text-xl">
+      <div className="flex justify-center gap-5 mt-3 text-lg md:text-xl">
         <a href={git} target="_blank">
           <Button
             label={<FaGithub />}

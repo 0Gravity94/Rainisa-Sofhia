@@ -7,6 +7,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: 0.4s ease-in;
 }
 
 body {
@@ -28,5 +29,5 @@ body {
 #about,
 #skillsTech,
 #works {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
