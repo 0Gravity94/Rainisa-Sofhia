@@ -40,7 +40,7 @@ export const datas = [
     title: "My Portofolio",
     description: "Simple website created as a web portofolio.",
     tech: "Vite ReactJS, Tailwind CSS, daisyUi, Tailwindcss-animated",
-    live: "https://rainisa-sofhia.vercel.app/",
-    git: "https://github.com/0Gravity94/my-portofolio",
+    live: "https://rainisasofhia.vercel.app/",
+    git: "https://github.com/0Gravity94/Rainisa-Sofhia",
   },
 ];
