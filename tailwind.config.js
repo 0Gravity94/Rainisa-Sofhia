@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FAF5EF",
-        secondary: "#F3E3E2",
+        primary: "#040403",
+        secondary: "#5B7553",
+        accent: "#E6E6E6",
       },
     },
     daisyui: {
