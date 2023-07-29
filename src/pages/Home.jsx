@@ -1,17 +1,10 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
-
-import { HiOutlineChatBubbleLeftRight } from "react-icons/hi2";
 
 import { WithRouter } from "../utils/Navigation";
 import Layout from "../components/Layout";
 import CardProjects from "../components/CardProject";
-import Button from "../components/Button";
+import Welcome from "../components/Welcome";
 
-import Me from "../assets/Me.png";
 import { datas } from "../data/project";
 import "../styles/index.css";
 
@@ -20,75 +13,7 @@ function Home(props) {
     <Layout>
       <div id="snaps" className="w-screen h-screen overflow-auto ">
         {/* Welcome */}
-        <div
-          id="welcome"
-          className="flex items-center justify-center min-h-screen transition-all ease-in-out"
-        >
-          <div className="grid w-full px-2 py-5 rounded-lg bg-primary place-content-center md:w-2/3 md:py-10 md:px-10">
-            <div className="flex flex-col items-center justify-center md:flex-row gap-x-5 gap-y-5">
-              <div className="flex flex-col gap-y-4 ">
-                <h2
-                  className="text-xl font-bold md:text-2xl lg:text-4xl text-slate-800 "
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in"
-                  data-aos-delay="50"
-                >
-                  Hi there! <br /> I'm Rainisa Sofhia
-                </h2>
-                <div
-                  className="text-sm font-semibold md:text-xl lg:text-2xl text-slate-800"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in"
-                  data-aos-delay="1000"
-                >
-                  <Typewriter
-                    options={{
-                      strings: [
-                        "Junior Frontend Developer",
-                        "Tech Enthusiast",
-                        "Video Games Lover",
-                      ],
-                      autoStart: true,
-                      loop: true,
-                      delay: 50,
-                    }}
-                  />
-                </div>
-              </div>
-              <div
-                className="flex flex-col items-center justify-center gap-y-4"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in"
-                data-aos-delay="50"
-              >
-                <img
-                  src={Me}
-                  alt="my-photo"
-                  className="flex justify-center w-1/3 rounded-full"
-                />
-                <Button
-                  className="flex flex-col items-center justify-center p-2 text-base bg-opacity-50 border-4 rounded-md cursor-pointer md:text-2xl bg-gray-50 border-slate-800 md:mx-5"
-                  label={
-                    <>
-                      <a
-                        className="flex justify-center gap-4 "
-                        aria-label="Chat on whatsapp"
-                        href="https://wa.me/+6285386664620"
-                        target="_blank"
-                      >
-                        <span>Let's chat</span>
-                        <HiOutlineChatBubbleLeftRight className="text-2xl md:text-4xl text-slate-800 animate-bounce" />
-                      </a>
-                    </>
-                  }
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Welcome />
         {/* About */}
         <div
           id="about"
