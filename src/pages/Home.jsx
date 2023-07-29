@@ -4,6 +4,7 @@ import { WithRouter } from "../utils/Navigation";
 import Layout from "../components/Layout";
 import CardProjects from "../components/CardProject";
 import Welcome from "../components/Welcome";
+import About from "../components/About";
 
 import { datas } from "../data/project";
 import "../styles/index.css";
@@ -15,28 +16,7 @@ function Home(props) {
         {/* Welcome */}
         <Welcome />
         {/* About */}
-        <div
-          id="about"
-          className="flex items-center justify-center min-h-screen bg-secondary"
-        >
-          <div className="flex flex-col items-center justify-center w-full px-2 py-5 my-32 rounded-lg md:flex-row md:w-2/3 h-2/3 md:my-4 lg:my-0 md:py-10 md:px-5">
-            <h1
-              className="text-base italic font-thin text-justify md:text-lg lg:text-lg text-slate-800"
-              // data-aos="zoom-in"
-              // data-aos-duration="3000"
-              // data-aos-easing="ease-in"
-            >
-              "I am a junior frontend developer enthusiast in developing user
-              interfaces for web applications. Recently finished my study at
-              Alterra Academy for Frontend Engineer program where I’d worked on
-              some personal and group projects like database movie app,
-              e-commerce app, and booking app. Skilled in HTML ,CSS, Javascript,
-              ReactJS and TailwindCSS. I’d love to work with a company that
-              values innovation, improvement, and respect among their
-              employees."
-            </h1>
-          </div>
-        </div>
+        <About />
         {/* Skills & Tech */}
         <div
           id="skillsTech"

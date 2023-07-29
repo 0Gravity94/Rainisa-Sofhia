@@ -8,7 +8,6 @@ function Layout({ children }) {
     <div className="w-full h-full bg-primary">
       <Navbar />
       <div className="w-full h-max">{children}</div>
-      <Footer />
     </div>
   );
 }
