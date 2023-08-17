@@ -19,14 +19,3 @@ body {
   ); */
   font-family: "Philosopher", sans-serif;
 }
-
-#snaps {
-  scroll-snap-type: y mandatory;
-}
-
-#snaps > #welcome,
-#about,
-#skillsTech,
-#works {
-  scroll-snap-align: start;
-}

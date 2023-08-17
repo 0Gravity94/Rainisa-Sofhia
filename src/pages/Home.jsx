@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import CardProjects from "../components/CardProject";
 import Welcome from "../components/Welcome";
 import About from "../components/About";
+import Carousel from "../components/Carousel";
 
 import { datas } from "../data/project";
 import "../styles/index.css";
@@ -14,133 +15,68 @@ function Home(props) {
     <Layout>
       <div id="snaps" className="w-screen h-screen overflow-auto ">
         {/* Welcome */}
-        <Welcome />
+        {/* <Welcome /> */}
         {/* About */}
-        <About />
+        {/* <About /> */}
         {/* Skills & Tech */}
-        <div
+        {/* <div
           id="skillsTech"
           className="flex flex-col items-center justify-center min-h-screen transition-all ease-in-out"
         >
           <h1 className="text-4xl">Tech Skills</h1>
-          <div
-            className="flex flex-wrap w-full gap-2 px-2 py-5 mt-5 mb-5 rounded-lg justify-evenly bg-primary md:gap-4 place-content-center md:w-2/3 md:py-10 md:px-10 "
-            // data-aos="fade-down"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
-            // data-aos-delay="50"
-          >
+          <div className="flex flex-wrap w-full gap-2 px-2 py-5 mt-5 mb-5 rounded-lg justify-evenly bg-primary md:gap-4 place-content-center md:w-2/3 md:py-10 md:px-10 ">
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
               alt="html5"
               width="60"
               height="60"
-              // data-aos="flip-right"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-              // data-aos-delay="1000"
             />
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
               alt="css3"
               width="60"
               height="60"
-              // data-aos="flip-right"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-              // data-aos-delay="1100"
             />
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
               alt="javascript"
               width="60"
               height="60"
-              // data-aos="flip-right"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-              // data-aos-delay="1200"
             />
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
               alt="react"
               width="60"
               height="60"
-              // data-aos="flip-right"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-              // data-aos-delay="1300"
             />
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg"
               alt="tailwind"
               width="60"
               height="60"
-              // data-aos="flip-right"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-              // data-aos-delay="1400"
             />
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
               alt="bootstrap"
               width="60"
               height="60"
-              // data-aos="flip-right"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-              // data-aos-delay="1400"
             />
             <img
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg"
               alt="figma"
               width="60"
               height="60"
-              // data-aos="flip-right"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-              // data-aos-delay="1500"
             />
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
               alt="canva"
               width="60"
               height="60"
-              // data-aos="flip-right"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-out"
-              // data-aos-delay="1600"
             />
           </div>
-          {/* <h1 className="text-4xl">Services</h1>
-          <div className="grid w-full grid-cols-2 gap-2 px-2 py-5 mt-5 mb-5 align-middle rounded-lg bg-primary place-items-center md:grid-cols-4 md:gap-4 place-content-center md:w-2/3 md:py-10 md:px-10 ">
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-              alt="html5"
-              width="60"
-              height="60"
-            />
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-              alt="css3"
-              width="60"
-              height="60"
-            />
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-              alt="javascript"
-              width="60"
-              height="60"
-            />
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-              alt="react"
-              width="60"
-              height="60"
-            />
-          </div> */}
-        </div>
+        </div> */}
         {/* My Projects */}
-        <div
+        {/* <div
           id="works"
           className="flex items-center justify-center min-h-screen transition-all ease-in-out bg-secondary"
         >
@@ -162,7 +98,8 @@ function Home(props) {
               />
             ))}
           </div>
-        </div>
+        </div> */}
+        <Carousel />
       </div>
     </Layout>
   );

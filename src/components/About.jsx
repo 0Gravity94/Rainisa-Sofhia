@@ -2,13 +2,15 @@ import React from "react";
 import Me from "../assets/Me.png";
 import SocialMedia from "./SocialMedia";
 
+import "../styles/button.css";
+
 function About() {
   return (
     <section
       id="about"
       className="flex flex-wrap items-center justify-center min-h-screen py-28"
     >
-      <div className="flex flex-col items-center mb-5 md:mb-0 profile-card gap-y-3">
+      <div className="flex flex-col items-center mb-5 md:mb-0 gap-y-3">
         <div className="flex justify-center profile-image">
           <img src={Me} alt="Rainisa Sofhia" className="w-1/3 md:w-1/2" />
         </div>
@@ -19,8 +21,12 @@ function About() {
           <a
             href="https://drive.google.com/file/d/1aPx7NWAbv8bGtlGkXylRLwTRff_NaOPR/view?usp=sharing"
             target="_blank"
-            className="p-2 border-2 shadow-md rounded-2xl border-secondary shadow-secondary hover:border-none hover:shadow-none hover:bg-secondary text-accent"
+            id="button-style"
           >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             My Resume
           </a>
         </div>
