@@ -1,0 +1,14 @@
+.cursor-animation {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  opacity: 0.7;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 0 10px #5b7553, 0 0 20px #5b7553, 0 0 30px #5b7553,
+    0 0 40px #5b7553; /* Neon-like glow */
+}
