@@ -19,7 +19,7 @@ function About() {
         </div>
         <div className="my-resume">
           <a
-            href="https://drive.google.com/file/d/1aPx7NWAbv8bGtlGkXylRLwTRff_NaOPR/view?usp=sharing"
+            href="https://drive.google.com/file/d/1wKtAXNoB4P4SAqJYvOakoJgBLT_LBODF/view?usp=drive_link"
             target="_blank"
             id="button-style"
           >

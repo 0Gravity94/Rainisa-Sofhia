@@ -24,7 +24,7 @@ function Navbar() {
           <FaLaptopCode className="p-1 hover:scale-125" />
         </a>
         <a
-          href="https://drive.google.com/file/d/1aPx7NWAbv8bGtlGkXylRLwTRff_NaOPR/view?usp=sharing"
+          href="https://drive.google.com/file/d/1wKtAXNoB4P4SAqJYvOakoJgBLT_LBODF/view?usp=drive_link"
           target="_blank"
         >
           <FaIdBadge className="p-1 hover:scale-125" />
